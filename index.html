@@ -11,6 +11,7 @@
             --text: #222222;
             --light-bg: #f4f6f4;
             --white: #ffffff;
+            --whatsapp: #25d366; /* WhatsApp Brand Color */
         }
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -122,16 +123,36 @@
             display: inline-block;
             background-color: var(--primary);
             color: var(--white);
-            padding: 8px 15px;
+            padding: 10px 15px;
             text-decoration: none;
-            border-radius: 4px;
+            border-radius: 6px;
             font-weight: bold;
             font-size: 14px;
             margin-top: 5px;
-            transition: background 0.3s;
+            transition: opacity 0.3s;
+            text-align: center;
         }
         .social-link:hover {
-            background-color: #142b16;
+            opacity: 0.9;
+        }
+        .whatsapp-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--whatsapp);
+            color: var(--white);
+            padding: 12px 15px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 15px;
+            margin-top: 5px;
+            transition: opacity 0.3s;
+            text-align: center;
+            border: none;
+        }
+        .whatsapp-link:hover {
+            opacity: 0.9;
         }
         
         /* Premium Responsive Footer Setup */
@@ -165,6 +186,24 @@
             letter-spacing: 0.5px;
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
+        .footer-socials {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .footer-socials a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        .footer-socials a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
 
         /* Mobile Optimization Rules */
         @media (max-width: 768px) {
@@ -179,9 +218,6 @@
             .main-content {
                 grid-template-columns: 1fr;
                 margin: 30px auto;
-            }
-            header style {
-                padding: 20px 10px 15px 10px;
             }
         }
     </style>
@@ -200,18 +236,11 @@
     </div>
 </nav>
 
-<!-- Premium Shadow Brand Container -->
-<header style="background: #ffffff; padding: 35px 15px 25px 15px; text-align: center; border-bottom: 1px solid #f0f0f0;">
+<!-- Clean Header Zone (Zero Text Repetition) -->
+<header style="background: #ffffff; padding: 40px 15px 30px 15px; text-align: center; border-bottom: 1px solid #f0f0f0;">
     <!-- Premium Shadow-Lifted Corporate Logo -->
     <img src="VC%20FRONT.jpg" alt="RealtySense Logo" width="569" height="348" 
-         style="display: inline-block; width: 100%; max-width: 410px; height: auto; border: none; border-radius: 12px; box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06); margin-bottom: 25px;">
-    
-    <!-- Prominent Triple-Pillar Tagline (High Visibility Layout) -->
-    <div class="brand-pillars" style="padding: 0 10px;">
-        <p style="font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.95rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: #1a1a1a; margin: 0; line-height: 1.6;">
-            Spatial Strategy &bull; Institutional Mandates &bull; Business Growth
-        </p>
-    </div>
+         style="display: inline-block; width: 100%; max-width: 410px; height: auto; border: none; border-radius: 12px; box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);">
 </header>
 
 <div class="main-content">
@@ -248,32 +277,13 @@
         </div>
     </div>
 
-    <!-- Right Sidebar Elements -->
+    <!-- Right Sidebar Elements (Restored Complete Name, Address & Premium Channels) -->
     <div>
         <div class="sidebar-card">
             <h2>PRIVATE OFFICE</h2>
+            <p style="font-size: 16px; margin-bottom: 4px; color: var(--primary);"><b>Anshuman Patnaik</b></p>
+            <p style="font-size: 14px; color: #666; margin-top: 0; margin-bottom: 15px;">Managing Director</p>
+            
             <p style="font-size: 15px; margin-bottom: 8px;"><b>HQ Location:</b></p>
-            <p style="font-size: 14px; color: #444; margin-top: 0;">
+            <p style="font-size: 14px; color: #444; margin-top: 0; margin-bottom: 15px;">
                 Chandrasekharpur Business Hub,<br>
-                Bhubaneswar, Odisha<br>
-                PIN: 751021
-            </p>
-            <p style="font-size: 15px; margin-bottom: 8px;"><b>Corporate Communications:</b></p>
-            <p style="font-size: 14px; color: #444; margin-top: 0;">
-                anshuman@realtysense.co.in<br>
-                info@realtysense.co.in
-            </p>
-            <a href="mailto:anshuman@realtysense.co.in" class="social-link">Secure Sync Email</a>
-        </div>
-    </div>
-</div>
-
-<!-- Institutional & Regulatory Compliance Footer -->
-<footer>
-    <div style="max-width: 1100px; margin: 0 auto; padding: 0 20px;">
-        <p style="font-size: 1.2rem; font-weight: bold; letter-spacing: 1.5px; color: #ffffff; margin-bottom: 5px;">
-            REALTY SENSE
-        </p>
-        
-        <!-- Regulatory Affiliations Pill Bar -->
-        <div class="compliance-bar">
