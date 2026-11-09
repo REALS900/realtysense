@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Realty Sense | Spatial Strategy & Institutional Mandates</title>
+    <title>REALTY SENSE | Fiduciary Industrial & Commercial Real Estate Advisory (Odisha)</title>
     <style>
         :root {
             --primary: #1e3f20; 
             --accent: #2c5e30;
+            --gold: #b89742;
             --text: #222222;
             --light-bg: #FAF6EE;
             --white: #FAF6EE;
             --whatsapp: #25d366;
         }
+        html { scroll-behavior: smooth; }
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0; padding: 0;
@@ -23,8 +25,9 @@
         }
         nav {
             background-color: var(--primary);
-            padding: 20px 0;
+            padding: 18px 0;
             position: sticky; top: 0; z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         .nav-container {
             max-width: 1100px; margin: 0 auto;
@@ -34,156 +37,120 @@
             color: #FAF6EE; font-size: 22px; font-weight: bold; text-decoration: none; letter-spacing: 1px;
         }
         .nav-links a {
-            color: #FAF6EE; text-decoration: none; margin-left: 25px; font-weight: 500; font-size: 15px;
+            color: #FAF6EE; text-decoration: none; margin-left: 22px; font-weight: 500; font-size: 15px;
         }
-        
-        /* Master Grid Container Layout */
-        .main-content {
-            max-width: 1100px; margin: 50px auto; padding: 0 20px;
-            display: grid; grid-template-columns: 2fr 1fr; gap: 40px;
+        .nav-links a:hover, .nav-links a.active {
+            color: #e6c875;
+            border-bottom: 2px solid #e6c875;
+            padding-bottom: 4px;
         }
-        
-        h2 { color: var(--primary); font-size: 24px; border-bottom: 2px solid rgba(30, 63, 32, 0.1); padding-bottom: 8px; margin-top: 0; }
-        .pillar-box { 
-            background-color: var(--light-bg) !important; 
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://w3.org' id='noise'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.015 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E") !important;
-            padding: 25px; border-radius: 6px; margin-bottom: 25px; border: 1px solid rgba(30, 63, 32, 0.12); border-left: 5px solid var(--primary);
-        }
-        .pillar-title { font-weight: bold; color: var(--primary); font-size: 18px; margin-bottom: 10px; }
-        .grid-services { display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 30px; }
-        .service-card { border: 1px solid rgba(30, 63, 32, 0.15); padding: 25px; border-radius: 6px; background-color: var(--light-bg); }
-        .service-card h3 { color: var(--primary); margin-top: 0; }
-        .btn-link { display: inline-block; margin-top: 15px; color: var(--accent); text-decoration: none; font-weight: bold; }
-        
-        /* Sidebar Styling Configurations */
-        .sidebar-card { 
-            background-color: var(--light-bg) !important;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://w3.org' id='noise'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.015 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E") !important;
-            border: 1px solid rgba(30, 63, 32, 0.15); padding: 25px; border-radius: 6px; margin-bottom: 25px; 
-            display: block !important; visibility: visible !important;
-        }
-        .whatsapp-link { display: block; background-color: var(--whatsapp); color: #ffffff !important; padding: 12px 15px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 15px; margin-top: 10px; text-align: center; }
-        .btn-fb { background-color: #3B5998 !important; color: #ffffff !important; display: block; padding: 10px 15px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 14px; margin-top: 10px; text-align: center; }
-        .btn-ln { background-color: #007BB5 !important; color: #ffffff !important; display: block; padding: 10px 15px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 14px; margin-top: 10px; text-align: center; }
-        .contact-email { font-size: 14px; color: #222222 !important; word-break: break-all; margin: 8px 0; font-weight: bold; }
-        .eco-notice { font-size: 12px; color: #444444 !important; border-top: 1px dashed rgba(30, 63, 32, 0.2); padding-top: 12px; margin-top: 15px; line-height: 1.5; font-style: italic; }
-        
         header { 
             background: var(--white) !important; 
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://w3.org' id='noise'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.015 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E") !important;
-            padding: 40px 15px 30px 15px; text-align: center; border-bottom: 1px solid rgba(30, 63, 32, 0.08); 
+            padding: 35px 15px 30px 15px; text-align: center; border-bottom: 1px solid rgba(30, 63, 32, 0.1); 
         }
         header img {
             mix-blend-mode: multiply !important;
             background-color: transparent !important;
         }
-        
-        /* High-Contrast Bulletproof Footer Layer */
+        .hero-tagline {
+            max-width: 780px; margin: 20px auto 0 auto;
+        }
+        .hero-tagline h1 {
+            color: var(--primary); font-size: 26px; margin: 0 0 10px 0; line-height: 1.3;
+        }
+        .hero-tagline p {
+            color: #333333; font-size: 16px; margin: 0;
+        }
+        .main-content {
+            max-width: 1100px; margin: 45px auto; padding: 0 20px;
+            display: grid; grid-template-columns: 2fr 1fr; gap: 40px;
+        }
+        h2 { color: var(--primary); font-size: 22px; border-bottom: 2px solid rgba(30, 63, 32, 0.12); padding-bottom: 8px; margin-top: 0; letter-spacing: 0.5px; }
+        .pillar-box { 
+            background-color: var(--light-bg) !important; 
+            padding: 22px 25px; border-radius: 6px; margin-bottom: 22px; border: 1px solid rgba(30, 63, 32, 0.14); border-left: 5px solid var(--primary);
+        }
+        .pillar-title { font-weight: bold; color: var(--primary); font-size: 18px; margin-bottom: 8px; }
+        .pillar-box p { margin: 0; font-size: 15px; }
+        .grid-services { display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 25px; }
+        .service-card { border: 1px solid rgba(30, 63, 32, 0.16); padding: 24px; border-radius: 6px; background-color: var(--light-bg); }
+        .service-card h3 { color: var(--primary); margin-top: 0; margin-bottom: 10px; font-size: 19px; }
+        .service-card p { margin: 0; font-size: 15px; }
+        .btn-link { display: inline-block; margin-top: 14px; color: var(--accent); text-decoration: none; font-weight: bold; font-size: 15px; }
+        .btn-link:hover { text-decoration: underline; }
+        .sidebar-card { 
+            background-color: var(--light-bg) !important;
+            border: 1px solid rgba(30, 63, 32, 0.16); padding: 25px; border-radius: 6px; margin-bottom: 25px; 
+        }
+        .sidebar-card h3 { color: var(--primary); margin-top: 0; font-size: 18px; border-bottom: 1px solid rgba(30, 63, 32, 0.1); padding-bottom: 8px; }
+        .whatsapp-link { display: block; background-color: var(--whatsapp); color: #ffffff !important; padding: 12px 15px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 15px; margin-top: 12px; text-align: center; }
+        .btn-primary { background-color: var(--primary) !important; color: #FAF6EE !important; display: block; padding: 11px 15px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 14px; margin-top: 10px; text-align: center; }
+        .btn-ln { background-color: #007BB5 !important; color: #ffffff !important; display: block; padding: 10px 15px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 14px; margin-top: 10px; text-align: center; }
+        .contact-email { font-size: 14px; color: #222222 !important; word-break: break-all; margin: 8px 0; font-weight: bold; }
+        .contact-email a { color: var(--primary); text-decoration: none; }
+        .eco-notice { font-size: 13px; color: #444444 !important; border-top: 1px dashed rgba(30, 63, 32, 0.25); padding-top: 12px; margin-top: 15px; line-height: 1.5; font-style: italic; }
         footer { 
             clear: both !important;
-            display: block !important;
-            visibility: visible !important;
-            background-color: #112613 !important; /* Rich deep dark forest green */
+            background-color: #112613 !important;
             color: #FAF6EE !important; 
             text-align: center !important; 
             padding: 40px 20px !important; 
             margin-top: 50px !important; 
             font-size: 14px !important; 
-            border-top: 4px solid #b89742 !important;
+            border-top: 4px solid var(--gold) !important;
         }
         footer p { margin: 8px 0 !important; color: #FAF6EE !important; font-weight: 500 !important; }
         .compliance-bar { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 15px 0; }
-        .compliance-badge { background-color: rgba(255, 255, 255, 0.15) !important; color: #ffffff !important; padding: 8px 16px; border-radius: 4px; font-size: 13px; display: inline-block; text-decoration: none; font-weight: bold; border: 1px solid rgba(255, 255, 255, 0.2); }
-        
-        @media (max-width: 768px) { .nav-container { flex-direction: column; gap: 15px; } .nav-links a { margin: 0 10px; } .main-content { grid-template-columns: 1fr; } }
+        .compliance-badge { background-color: rgba(255, 255, 255, 0.15) !important; color: #ffffff !important; padding: 8px 16px; border-radius: 4px; font-size: 13px; display: inline-block; font-weight: bold; border: 1px solid rgba(255, 255, 255, 0.2); }
+        @media (max-width: 768px) { 
+            .nav-container { flex-direction: column; gap: 12px; } 
+            .nav-links { text-align: center; }
+            .nav-links a { margin: 0 8px; font-size: 14px; } 
+            .main-content { grid-template-columns: 1fr; } 
+        }
     </style>
 </head>
 <body>
-
 <nav>
     <div class="nav-container">
         <a href="index.html" class="nav-logo">REALTY SENSE</a>
         <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="industrial.html">Industrial & Logistics</a>
-            <a href="commercial.html">Corporate Retail</a>
-            <a href="fitouts.html">Turnkey Fit-Outs</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="peb-consulting.html">PEB & Turnkey Consulting</a>
+            <a href="index.html#industrial">Industrial & Logistics</a>
+            <a href="index.html#retail">Corporate Retail</a>
         </div>
     </div>
 </nav>
-
 <header>
-    <img src="VC%20FRONT.jpg" alt="RealtySense Logo" width="569" height="348" style="display: inline-block; width: 100%; max-width: 410px; height: auto; border: none; border-radius: 12px; box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);">
+    <img src="VC%20FRONT.jpg" alt="RealtySense Logo" width="569" height="348" style="display: inline-block; width: 100%; max-width: 390px; height: auto; border: none; border-radius: 12px; box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);">
+    <div class="hero-tagline">
+        <h1>Fiduciary Advisory & Turnkey Governance for Odisha’s Industrial Corridor</h1>
+        <p>Backed by <strong>25+ years of real estate advisory and turnkey execution pedigree (since 2001)</strong>. Guiding landowners and corporate boards from clear-title land acquisition and PEB auditing to Grade-A warehouse leasing along NH-16.</p>
+    </div>
 </header>
-
 <div class="main-content">
-    <!-- LEFT PANEL: FOUNDATIONAL CORE CONTENT -->
     <div>
-        <h2>FOUNDATIONAL PILLARS</h2>
+        <h2>WHY REALTY SENSE (FIDUCIARY GOVERNANCE)</h2>
         <div class="pillar-box">
-            <div class="pillar-title">1. Spatial Strategy (Our Vision)</div>
-            <p>To redefine commercial infrastructure across Odisha by integrating cutting-edge layout analytics with physical site intelligence.</p>
+            <div class="pillar-title">1. 25+ Years of Odisha Ground Pedigree (Since 2001)</div>
+            <p>Two and a half decades of local market intelligence, deal structuring, and turnkey project execution across Bhubaneswar, Cuttack, Khordha, Jajpur/Kalinganagar, and Jharsuguda.</p>
         </div>
         <div class="pillar-box">
-            <div class="pillar-title">2. Institutional Mandates (Our Mission)</div>
-            <p>To act as the trusted sole-agency partner for corporate boards, investment funds, and industrial landowners along the highway corridors.</p>
+            <div class="pillar-title">2. 100% Fiduciary Owner’s Representative</div>
+            <p>We sit strictly on the client’s side of the table—zero hidden vendor kickbacks, transparent steel tonnage & BOQ auditing, and disciplined timeline governance from bare land to handover.</p>
         </div>
         <div class="pillar-box">
-            <div class="pillar-title">3. Business Growth (Our Goal)</div>
-            <p>To scale our clients' operational capacity and maximize transaction asset yields.</p>
+            <div class="pillar-title">3. Single-Window Land-to-Lease Execution</div>
+            <p>Bridging raw highway acreage and corporate demand through regulatory GO-SWIFT clearances, Grade-A PEB engineering, Triple-Net (NNN) leasing, and Lease Rental Discounting (LRD) optimization.</p>
         </div>
-
-        <h2 style="margin-top: 40px;">OPERATIONAL FOCUS AREAS</h2>
+        <h2 id="industrial" style="margin-top: 40px;">CORE ADVISORY & TRANSACTION MANDATES</h2>
         <div class="grid-services">
             <div class="service-card">
-                <h3>Industrial, Warehousing &amp; Logistics</h3>
-                <p>Strategic transaction management and leasing solutions across primary transportation corridors.</p>
-                <a href="industrial.html" class="btn-link">Explore Mandates →</a>
+                <h3>End-to-End PEB & Built-to-Suit (BTS) Consulting</h3>
+                <p>Complete Owner’s Representative handholding—from GO-SWIFT statutory approvals and PEB fabricator vetting to enforcing 12m clear heights, FM2 laser-screed flooring, and ESG green insulation without cost overruns.</p>
+                <a href="peb-consulting.html" class="btn-link">Explore Our 5-Stage PEB Handholding Process →</a>
             </div>
-        </div>
-    </div>
-            <!-- RIGHT PANEL: BALANCED SIDEBAR SYSTEM -->
-        <div class="sidebar-card">
-            <h2 style="font-size: 18px; border-bottom: 1px solid rgba(30, 63, 32, 0.15); padding-bottom: 5px; margin-bottom: 15px; color: #1e3f20;">CORPORATE PROFILE</h2>
-            <div class="contact-email" style="margin-bottom: 5px; font-size: 15px;"><strong>Anshuman Rath</strong></div>
-            <div class="contact-email" style="margin-bottom: 10px; font-weight: normal; color: #555555;">Chief Consultant</div>
-            <div class="contact-email" style="margin-bottom: 15px; line-height: 1.4; font-weight: normal; font-size: 13.5px;">Chandrasekharpur Business Hub,<br>Bhubaneswar, Odisha, India</div>
-            
-            <h3 style="font-size: 14px; margin: 15px 0 5px 0; color: #1e3f20; border-top: 1px solid rgba(30, 63, 32, 0.1); padding-top: 10px;">OFFICIAL CHANNELS</h3>
-            <div class="contact-email" style="font-size: 13.5px; font-weight: normal;">anshuman@realtysense.co.in</div>
-            <div class="contact-email" style="font-size: 13.5px; font-weight: normal;">info@realtysense.co.in</div>
-        </div>
-
-        <div class="sidebar-card">
-            <h2 style="font-size: 18px; border-bottom: 1px solid rgba(30, 63, 32, 0.15); padding-bottom: 5px; margin-bottom: 15px; color: #1e3f20;">ACQUISITION & ENGAGEMENT</h2>
-            <a href="mailto:info@realtysense.co.in?subject=Schedule%20Corporate%20Briefing" class="social-link" style="background-color: #222222 !important; color: #ffffff !important; display: block; padding: 10px 15px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 13px; margin-top: 10px; text-align: center; line-height: 1.3;">Schedule Corporate Briefing</a>
-            <a href="mailto:info@realtysense.co.in?subject=Submit%20Placement%20Brief%20/%20Mandate" class="social-link" style="background-color: #222222 !important; color: #ffffff !important; display: block; padding: 10px 15px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 13px; margin-top: 10px; text-align: center; line-height: 1.3;">Submit Placement Brief / Mandate</a>
-            <a href="mailto:info@realtysense.co.in?subject=Request%20Commercial%20Evaluation%20Quote" class="social-link" style="background-color: #222222 !important; color: #ffffff !important; display: block; padding: 10px 15px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 13px; margin-top: 10px; text-align: center; line-height: 1.3;">Request Commercial Evaluation / Quote</a>
-        </div>
-
-        <div class="sidebar-card">
-            <h2 style="font-size: 18px; border-bottom: 1px solid rgba(30, 63, 32, 0.15); padding-bottom: 5px; margin-bottom: 15px; color: #1e3f20;">WE ARE SOCIAL</h2>
-            <a href="https://wa.me" class="whatsapp-link" target="_blank">Connect on WhatsApp</a>
-            <a href="YOUR_FACEBOOK_URL" class="btn-fb" target="_blank">Facebook</a>
-            <a href="YOUR_LINKEDIN_URL" class="btn-ln" target="_blank">LinkedIn</a>
-            
-            <div class="eco-notice">
-                🌿 <strong>Environmental Consciousness:</strong> RealtySense is committed to promoting green, energy-efficient building matrices and sustainable spatial choices throughout industrial zoning matrices. Advancing clean technology for zero-waste asset allocation.
-            </div>
-        </div>
-    </div>
-</div>
-
-<footer>
-    <p>© RealtySense | Spatial Strategy • Institutional Mandates • Business Growth</p>
-    <p>HQ PIN Code: 751021</p>
-    <div class="compliance-bar">
-        <a href="gst-certificate.pdf" class="compliance-badge" target="_blank">GST ACTIVE</a>
-        <a href="orera-registration.pdf" class="compliance-badge" target="_blank">ORERA REGISTERED</a>
-    </div>
-</footer>
-</body>
-</html>
-
-
-           
+            <div class="service-card">
+                <h3>Industrial Land Acquisition & Site Assembly</h3>
+                <p>Sourcing verified, non-tribal, clear-title industrial acreage with highway frontage and heavy container access along NH-16, Khordha, Jatni, Choudwar, Paradip, and Kalinganagar corridors.</p>
