@@ -112,7 +112,88 @@
         </div>
     </aside>
 </div>
-<!-- START PASTING HERE -->
+
+<section id="engagement-section" style="background-color: #f4f7f5; padding: 60px 20px; font-family: sans-serif;">
+    <div style="max-width: 650px; margin: 0 auto; background-color: #ffffff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-top: 4px solid #1b5e20; text-align: left;">
+        
+        <h3 style="color: #0b2b1a; margin-top: 0; margin-bottom: 8px; font-size: 22px; font-weight: 700;">Engagement & Mandate Intake</h3>
+        <p style="color: #555555; font-size: 14px; margin-bottom: 25px; line-height: 1.5;">
+            Submit your corporate requirements below. As a 100% fiduciary representative, Realty Sense reviews briefs directly under strict confidentiality protocols.
+        </p>
+
+        <form name="realty-sense-global-contact" method="POST" data-netlify="true" style="display: flex; flex-direction: column; gap: 20px;">
+            
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+                <div style="flex: 1; min-width: 240px; display: flex; flex-direction: column; gap: 6px;">
+                    <label style="font-size: 13px; font-weight: 600; color: #0b2b1a;">Your Name *</label>
+                    <input type="text" name="name" required style="padding: 10px; border: 1px solid #cccccc; border-radius: 4px; font-size: 14px; color: #000000;">
+                </div>
+                <div style="flex: 1; min-width: 240px; display: flex; flex-direction: column; gap: 6px;">
+                    <label style="font-size: 13px; font-weight: 600; color: #0b2b1a;">Company / Enterprise Name *</label>
+                    <input type="text" name="company" required style="padding: 10px; border: 1px solid #cccccc; border-radius: 4px; font-size: 14px; color: #000000;">
+                </div>
+            </div>
+
+            <!-- Contact Vectors -->
+            <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+                <div style="flex: 1; min-width: 240px; display: flex; flex-direction: column; gap: 6px;">
+                    <label style="font-size: 13px; font-weight: 600; color: #0b2b1a;">Corporate Email *</label>
+                    <input type="email" name="email" required style="padding: 10px; border: 1px solid #cccccc; border-radius: 4px; font-size: 14px; color: #000000;">
+                </div>
+                <div style="flex: 1; min-width: 240px; display: flex; flex-direction: column; gap: 6px;">
+                    <label style="font-size: 13px; font-weight: 600; color: #0b2b1a;">Contact Number *</label>
+                    <input type="tel" name="phone" required style="padding: 10px; border: 1px solid #cccccc; border-radius: 4px; font-size: 14px; color: #000000;">
+                </div>
+            </div>
+
+            <!-- Dynamic Parameters (Service + Location Corridor) -->
+            <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+                <!-- Flexible Service Selector -->
+                <div style="flex: 1; min-width: 240px; display: flex; flex-direction: column; gap: 6px;">
+                    <label style="font-size: 13px; font-weight: 600; color: #0b2b1a;">Service Segment Required *</label>
+                    <select name="service_type" required style="padding: 10px; border: 1px solid #cccccc; border-radius: 4px; font-size: 14px; background-color: #ffffff; color: #000000;">
+                        <option value="">-- Select Advisory Type --</option>
+                        <option value="Industrial & Logistics Sourcing">Industrial Land Sourcing & SCM Logistics</option>
+                        <option value="PEB & BTS Advisory">PEB Engineering & Built-to-Suit Advisory</option>
+                        <option value="Commercial Fit-outs & Solar">Office Fit-Outs, Project Management & Solar</option>
+                        <option value="Other Custom Mandate">Other Unlisted / Specialized Custom Mandate (Specify Below)</option>
+                    </select>
+                </div>
+
+                <!-- Flexible Location Selector -->
+                <div style="flex: 1; min-width: 240px; display: flex; flex-direction: column; gap: 6px;">
+                    <label style="font-size: 13px; font-weight: 600; color: #0b2b1a;">Primary Corridor of Interest *</label>
+                    <select name="corridor" required style="padding: 10px; border: 1px solid #cccccc; border-radius: 4px; font-size: 14px; background-color: #ffffff; color: #000000;">
+                        <option value="">-- Select Target Location --</option>
+                        <option value="NH-16 / Khordha">NH-16 Logistics Corridor (Khordha/Jatni)</option>
+                        <option value="Cuttack / Choudwar">Cuttack & Choudwar Industrial Belt</option>
+                        <option value="Kalinganagar / Jharsuguda">Kalinganagar / Jharsuguda Metals Belt</option>
+                        <option value="Paradip Hub">Paradip Port-Linked Gateway</option>
+                        <option value="Other Unlisted Location">Other / Unlisted Region in Odisha (Specify Below)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Open Requirement Input -->
+            <div style="display: flex; flex-direction: column; gap: 6px;">
+                <label style="font-size: 13px; font-weight: 600; color: #0b2b1a;">Brief Spatial / Turnkey Advisory Requirements *</label>
+                <textarea name="brief_requirements" rows="4" required placeholder="Detail your exact requirements here. If your needed service or specific corridor location is unlisted above, please describe it explicitly so we can align our advisory response..." style="padding: 10px; border: 1px solid #cccccc; border-radius: 4px; font-size: 14px; resize: vertical; font-family: sans-serif; color: #000000;"></textarea>
+            </div>
+
+            <!-- Fiduciary Notice & Submit -->
+            <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 15px;">
+                <p style="margin: 0; font-size: 12px; color: #666666; line-height: 1.4;">
+                    🔒 <strong>Fiduciary Alignment Check:</strong> By submitting, you acknowledge that Realty Sense operates exclusively as an independent client advocate. We maintain a strict zero-kickback mandate across all third-party industrial and construction actions.
+                </p>
+                <button type="submit" style="background-color: #1b5e20; color: #ffffff; border: none; padding: 14px; border-radius: 4px; font-size: 15px; font-weight: 700; cursor: pointer;">
+                    Submit Brief to Anshuman Rath →
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
 <footer style="background-color: #0b2b1a; color: #ffffff; padding: 40px 20px; font-family: sans-serif; font-size: 14px; line-height: 1.6; text-align: left;">
     <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px;">
         
